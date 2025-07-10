@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Greens India - Your Online Microgreens Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        /* Custom styles for better aesthetics */
+        .product-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x600/34D399/FFFFFF?text=Fresh+Microgreens+Delivered+To+Your+Door');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center fixed w-full z-10 top-0">
+        <div class="text-2xl font-bold text-green-700 mb-4 md:mb-0">
+            Fresh Greens India
+        </div>
+        <nav class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-8 text-lg">
+            <a href="#home" class="text-gray-700 hover:text-green-600 font-medium rounded-md px-3 py-2">Home</a>
+            <a href="#products" class="text-gray-700 hover:text-green-600 font-medium rounded-md px-3 py-2">Shop Microgreens</a>
+            <a href="#about" class="text-gray-700 hover:text-green-600 font-medium rounded-md px-3 py-2">About Us</a>
+            <a href="#contact" class="text-gray-700 hover:text-green-600 font-medium rounded-md px-3 py-2">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white text-center py-32 md:py-48 mt-20 flex items-center justify-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                Taste the Freshness, Live the Health
+            </h1>
+            <p class="text-lg md:text-xl mb-8 drop-shadow-md">
+                Your direct source for farm-fresh, nutrient-packed microgreens, delivered right to your doorstep in India.
+            </p>
+            <a href="#products" class="btn-primary inline-block text-lg font-semibold shadow-lg hover:shadow-xl">
+                Explore Our Greens
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Fresh Microgreens Selection</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+                <!-- Product Card 1: Radish Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Radish+Microgreens" alt="Radish Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Radish Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Spicy and peppery, these microgreens add a zesty kick to salads and sandwiches. Rich in Vitamin C.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹150</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Sunflower Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Sunflower+Microgreens" alt="Sunflower Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Sunflower Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Nutty and crunchy, a great source of protein and essential fatty acids. Perfect for snacking.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹180</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Pea Shoots Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Pea+Shoots+Microgreens" alt="Pea Shoots Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Pea Shoots Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Sweet and tender, a versatile addition to any dish. Rich in antioxidants and vitamins.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹160</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4: Broccoli Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Broccoli+Microgreens" alt="Broccoli Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Broccoli Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Mild, slightly bitter, packed with sulforaphane – a powerful antioxidant.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹170</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5: Amaranth Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Amaranth+Microgreens" alt="Amaranth Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Amaranth Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Vibrant red, earthy flavor. High in vitamins K, C, and E, and iron.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹190</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6: Wheatgrass Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Wheatgrass+Microgreens" alt="Wheatgrass Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Wheatgrass Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Known for its detoxifying properties, perfect for juicing or smoothies.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹220</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 7: Basil Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Basil+Microgreens" alt="Basil Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Basil Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Aromatic and flavorful, a gourmet touch to Italian dishes and salads.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹200</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 8: Arugula Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Arugula+Microgreens" alt="Arugula Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Arugula Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Pungent and peppery, adds a sophisticated flavor to pizzas and pastas.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹140</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 9: Beetroot Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Beetroot+Microgreens" alt="Beetroot Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Beetroot Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Earthy and sweet with vibrant red stems, perfect for garnishing.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹165</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 10: Kale Microgreens -->
+                <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Kale+Microgreens" alt="Kale Microgreens" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Kale Microgreens</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">
+                            Mild and slightly bitter, packed with vitamins K, A, and C.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-2xl font-bold text-green-700">₹175</span>
+                            <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">About Fresh Greens India</h2>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                At Fresh Greens India, we are passionate about bringing the freshest, most nutrient-dense microgreens directly from our farm to your table. Grown with care and sustainable practices, our microgreens are harvested at their peak to ensure maximum flavor and health benefits. We believe in healthy living and aim to make these superfoods accessible to everyone across India. Join us on our journey to a healthier, greener lifestyle!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Get in Touch</h2>
+            <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-xl shadow-lg">
+                <form>
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Name">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="your.email@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your message..."></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="submit" class="btn-primary text-lg font-semibold px-6 py-3">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="text-center text-gray-600 mt-12">
+                <p>Email: <a href="mailto:info@freshgreensindia.com" class="text-green-600 hover:underline">info@freshgreensindia.com</a></p>
+                <p>Phone: <a href="tel:+919876543210" class="text-green-600 hover:underline">+91 98765 43210</a></p>
+                <p class="mt-2">Follow us on:
+                    <a href="#" class="text-green-600 hover:text-green-800 mx-2">Facebook</a> |
+                    <a href="#" class="text-green-600 hover:text-green-800 mx-2">Instagram</a> |
+                    <a href="#" class="text-green-600 hover:text-green-800 mx-2">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Fresh Greens India. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
